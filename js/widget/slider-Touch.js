@@ -316,6 +316,6 @@
         }
     };
    
-   Leyou.widget.SliderObject = SliderObject;
+    F.addWidget('SliderObject', SliderObject);
 }(window));
 

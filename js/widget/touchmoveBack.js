@@ -12,8 +12,8 @@
 				touchPosition.tEndX = e.changedTouches[0].pageX;
 				touchPosition.tEndY = e.changedTouches[0].pageY;
 
-				var disX = Math.abs((touchPosition.tEndX - touchPosition.tStartX) / Leyou.scale);
-				var disY = Math.abs((touchPosition.tEndY - touchPosition.tStartY) / Leyou.scale);
+				var disX = Math.abs((touchPosition.tEndX - touchPosition.tStartX) / F.scale);
+				var disY = Math.abs((touchPosition.tEndY - touchPosition.tStartY) / F.scale);
 				if(disX > bodyWidth / 4 && touchPosition.tStartX <= 10 && disY <= 50){
 					callback.call(this,touchPosition);
 				}
@@ -21,5 +21,5 @@
 			})
 	}
 
-	Leyou.widget.touchmoveBack = touchmoveBack;
+    F.addWidget('touchmoveBack', touchmoveBack);
 })(window)

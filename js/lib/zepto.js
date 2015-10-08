@@ -37,33 +37,31 @@ fairObject.prototype = {
       return JSON.parse(JSON.stringify(json))
     },
     AjaxF: function(options){
-      var settings = this.jsonClone(options);
+        var settings = this.jsonClone(options);
 
-      //success回调注入错误码处理
-      settings['success'] = function(data){
-
-          //添加错误码验证，如果出现错误码，则请求ajax更新状态
-          //if(data.errorCode .match( /'invalid token'/)){
-              //ajax to get token then redo this ajax
-              // $.ajax({
-              //    url:'https://.......',
-              //    type:'post',
-              //    data: {},
-              //    dataType: 'json',
-              //    success:function(){
-              //      //更新成功之后重发上次的ajax
-              //      //console.log(options.success);
-              //      F.AjaxF(options);//重新更新状态后，不会出现错误码
-              //    }
-              // })
-          // }
-          //不出现错误码，则直接使用自定义的回调
-          // else{
-          //   options['success'](data);
-          // }
-      }
-      $.ajax(settings);
-
+        //success回调注入错误码处理
+        settings['success'] = function(data){
+            //添加错误码验证，如果出现错误码，则请求ajax更新状态
+            //if(data.errorCode.match( /'invalid token'/)){
+                //ajax to get token then redo this ajax
+                // $.ajax({
+                //    url:'https://.......',
+                //    type:'post',
+                //    data: {},
+                //    dataType: 'json',
+                //    success:function(){
+                //      //更新成功之后重发上次的ajax
+                //      //console.log(options.success);
+                //      F.AjaxF(options);//重新更新状态后，不会出现错误码
+                //    }
+                // })
+            // }
+            //不出现错误码，则直接使用自定义的回调
+            // else{
+            //   options['success'](data);
+            // }
+        }
+        $.ajax(settings);
     }
 }
 var F = new fairObject(

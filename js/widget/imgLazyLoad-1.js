@@ -133,7 +133,7 @@
         },
     }
 
-    Leyou.widget.imgLazyObject = imgLazyObject;
+    F.addWidget('imgLazyObject', imgLazyObject);
 })(window);
 
 

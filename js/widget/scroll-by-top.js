@@ -351,7 +351,7 @@
         }
     }
 
-    Leyou.widget.scrollObject = scrollObject;
+    F.addWidget('scrollObject', scrollObject);
 })(window)
             //因为还有惯性滚动的距离，所以得一直循环获取当前的位置信息
             var loop = setInterval(function() {
@@ -385,5 +385,5 @@
         }
     }
 
-    Leyou.widget.scrollObject = scrollObject;
+    F.addWidget('scrollObject', scrollObject);
 })(window)

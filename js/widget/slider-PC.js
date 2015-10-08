@@ -211,6 +211,6 @@
                 return this._slide(index, false);
         }
     };
-    window.Slider = Slider;
+    F.addWidget('Slider', Slider);
 }(window));
 

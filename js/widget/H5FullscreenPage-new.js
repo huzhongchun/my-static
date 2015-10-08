@@ -428,6 +428,6 @@
     }
          
         
-    Leyou.widget.H5FullscreenPageObject = H5FullscreenPageObject;
+    F.addWidget('H5FullscreenPageObject', H5FullscreenPageObject);
 
 })(window);

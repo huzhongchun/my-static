@@ -191,5 +191,5 @@
         }
     }
 
-    Leyou.widget.scrollObject = scrollObject;
+    F.addWidget('scrollObject', scrollObject);
 })(window)

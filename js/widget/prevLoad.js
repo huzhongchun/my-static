@@ -55,6 +55,6 @@
 
 	}
 	
-    Leyou.widget.prevLoadObject = prevLoadObject;
+    F.addWidget('prevLoadObject', prevLoadObject);
 
 })(window,Zepto);

@@ -200,5 +200,5 @@
         }
     }
 
-    Leyou.widget.scrollXObject = scrollXObject;
+    F.addWidget('scrollXObject', scrollXObject);
 })(window)

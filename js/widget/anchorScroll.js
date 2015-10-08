@@ -7,7 +7,7 @@
 *
 */
 
-(function(window){
+(function(window,F){
 var AnchorscrollObject = function(options){
     this.settings = $.extend({
         diffDistance: 40
@@ -49,10 +49,10 @@ AnchorscrollObject.prototype = {
         }else{
             height = opt.height;
         }
-        top = (top - height) * Leyou.scale;
+        top = (top - height) * F.scale;
         var scrollHeight = 0;
         scrollHeight = $(window).scrollTop();
-        scrollHeight = (scrollHeight) * Leyou.scale;
+        scrollHeight = (scrollHeight) * F.scale;
         self.slideUp(top, scrollHeight);
     },
     getOffsetPositon : function(elem) {
@@ -70,4 +70,4 @@ AnchorscrollObject.prototype = {
 }
 
     F.addWidget('AnchorscrollObject', AnchorscrollObject);
-})(window)
+})(window,F)

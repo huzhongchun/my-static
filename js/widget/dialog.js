@@ -6,7 +6,7 @@
 * @date 2015/05/08
 *
 */
-(function(window){
+(function(window,F){
 var DialogObject = function(options){
     this.settings = $.extend({
         element: "element",
@@ -60,7 +60,7 @@ DialogObject.prototype = {
         var self = this,
             $uiBg = $('.ui-bg'),
             $body = $('body'),
-            htmls = Leyou.parseTpl(this.tpl, this.settings);
+            htmls = F.parseTpl(this.tpl, this.settings);
         this.dialog = $(htmls);
         //初始化dom
         $('#scale-wrapper').append(self.dialog);
@@ -69,7 +69,7 @@ DialogObject.prototype = {
     },
     show: function() {
         var bodyHeight = $('body').height();
-        var windowHeight = $(window).height() * (Leyou.scale ? Leyou.scale : 1);
+        var windowHeight = $(window).height() * (F.scale ? F.scale : 1);
         var height = bodyHeight > windowHeight ? bodyHeight : windowHeight;
         $('.ui-bg').css({'position': 'absolute', 'height': height + 'px','top':'0','left':'0'});
         this._culculate();
@@ -185,4 +185,4 @@ DialogObject.prototype = {
 }
 
 F.addWidget('DialogObject', DialogObject);
-})(window)
+})(window,F)

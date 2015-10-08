@@ -65,8 +65,8 @@ gulp.task( 'csslint', function(){
 //压缩css
 gulp.task('minifycss', function() {
     return gulp.src(options.csslint.src)      //压缩的文件
-        .pipe(gulp.dest('min/css'))   //输出文件夹
-        .pipe(minifycss());   //执行压缩
+        .pipe(minifycss())   //执行压缩
+        .pipe(gulp.dest('min/css'));   //输出文件夹
 })
 
 // jshint任务
