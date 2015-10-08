@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" id="viewport" content="width=320,initial-scale=1,user-scalable=no">
+        <!-- <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <title>title</title>
+        <style>
+            /*-----css content start-----*/
+            .content{
+                height: 1290px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="scale-wrapper">
+            <!-- html code--> 
+            <div class="content">
+                <input class="btn" type="button" value="你敢点我吗？">
+            </div>
+            <div id="anchor">啦啦啦啦</div>
+        </div>
+        <script src="../js/lib/zepto.js"></script>
+        <script src="../js/widget/anchorScroll.js"></script>
+        <script>
+            $(function() {
+                var anchorScroll = new Leyou.widget.AnchorscrollObject({
+                    
+                });
+                $('.btn').click(function(){
+                    anchorScroll.fireScroll('anchor');
+                })
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+

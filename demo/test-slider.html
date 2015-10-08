@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" id="viewport" content="width=320,initial-scale=1,user-scalable=no">
+        <!-- <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <title>title</title>
+        <style>
+            /*-----css content start-----*/
+            header{
+                width: 100%;
+            }
+            header img{
+                display: block;
+                width: 100%;
+            }
+            .banner-box{
+                position: relative;
+                overflow: hidden;
+            }
+            .banner-item{
+                display: block;
+            }
+            .slider-dots{
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: 5px;
+                left: 50%;
+                margin-left: -160px;
+            }
+            .slider-dots b{
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-radius: 5px;
+                background: #fff;
+                margin-right: 5px;
+            }
+            .slider-dots b.slider-dot-select{
+                background: #fff600;
+            }
+            /*end*/
+        </style>
+    </head>
+    <body>
+        <div id="scale-wrapper">
+            <!-- html code--> 
+            <header class="banner-area">
+                <div class="banner-box clearfloat" id="slider-banner">
+                    <a class="banner-item fl"  href=""><img src="../images/banner1.jpg"></a>
+                    <a class="banner-item fl"  href=""><img src="../images/banner2.jpg"></a>
+                    <a class="banner-item fl"  href=""><img src="../images/banner3.jpg"></a>
+                    <a class="banner-item fl"  href=""><img src="../images/banner4.jpg"></a>
+                </div>
+            </header>
+        </div>
+        <script src="../js/lib/zepto.js"></script>
+        <script src="../js/widget/slider-Touch-by-transform.js"></script>
+        <script>
+            $(function() {
+                var slider = new Leyou.widget.SliderObject('slider-banner',{
+                    autoPlay: true,
+                })
+                //dialog.show();
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+

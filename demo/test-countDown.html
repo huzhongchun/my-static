@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" id="viewport" content="width=320,initial-scale=1,user-scalable=no">
+        <!-- <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../css/dialog.css">
+        <title>title</title>
+        <style>
+            /*-----css content start-----*/
+            .content{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="scale-wrapper">
+            <!-- html code--> 
+            <div class="content"></div>
+        </div>
+        <script src="../js/lib/zepto.js"></script>
+        <script src="../js/widget/countDown.js"></script>
+        <script>
+            $(function() {
+                var dialog = new F.widget.countDownObject ({
+                     whereShow:100
+                });
+                //dialog.show();
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+

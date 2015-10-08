@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" id="viewport" content="width=320,initial-scale=1,user-scalable=no">
+        <!-- <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../css/dialog.css">
+        <title>title</title>
+        <style>
+            /*-----css content start-----*/
+            .boxs{
+                width: 200px;
+                height: 300px;
+                margin: 0 auto;
+            }
+            img{
+                width: 100%;
+                display: block
+            }
+        </style>
+    </head>
+    <body>
+        <div id="scale-wrapper">
+            <!-- html code--> 
+            <div class="boxs"><img class="img-lazy" data-url="http://image.leyou.com.cn/images_db/29/94/299482984b96ef1d84b23d11c36c8724.JPG"></div>
+            <div class="boxs"><img class="img-lazy" data-url="http://image.leyou.com.cn/images_db/bf/4b/bf4b1ce7265d76c29459a48edddde704.JPG"></div>
+            <div class="boxs"><img class="img-lazy" data-url="http://image.leyou.com.cn/images_db/74/30/7430829974b82cbd3b284ed972135bfd.JPG"></div>
+            <div class="boxs"><img class="img-lazy" data-url="http://image.leyou.com.cn/images_db/b9/78/b978f556110af80104a029205081c942.JPG"></div>
+            <div class="boxs"><img class="img-lazy" data-url="http://image.leyou.com.cn/images_db/9f/00/9f001d10b1e5a09890c38d60fcdf3f75.JPG"></div>
+            <div class="boxs"><img class="img-lazy" data-url="http://image.leyou.com.cn/images_db/25/c6/25c6108e5ef28ea446a40cce2d55b1fa.JPG"></div>
+            <div class="boxs"><img class="img-lazy" data-url="http://image.leyou.com.cn/images_db/61/07/6107073d115d72e40500cb6eaba4c25b.JPG"></div>
+            <div class="boxs"><img class="img-lazy" data-url="http://image.leyou.com.cn/images_db/12/a0/12a06b5f12e631209dcacefb778dc596.JPG"></div>
+        </div>
+        <script src="../js/lib/zepto.js"></script>
+        <script src="../js/widget/imglazyload-2.js"></script>
+        <script>
+            $(function() {
+                $('.img-lazy').imglazyload({})
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+

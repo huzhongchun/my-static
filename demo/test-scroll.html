@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" id="viewport" content="width=320,initial-scale=1,user-scalable=no">
+        <!-- <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1,user-scalable=no"> -->
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="stylesheet" type="text/css" href="../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../css/dialog.css">
+        <title>title</title>
+        <style>
+            /*-----css content start-----*/
+            .container{
+                margin: 50px;
+                width: 30%;
+                height: 200px;
+                border: 1px solid #000;
+            }
+            #scroll-box{
+            }
+            .items{
+                display: block;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="scale-wrapper">
+            <!-- html code--> 
+            <p>滑动下面的块儿试试</p>
+            <div class="container">
+                <div id="scroll-box">
+                    <span class="items">11</span>
+                    <span class="items">22</span>
+                    <span class="items">33</span>
+                    <span class="items">44</span>
+                    <span class="items">55</span>
+                    <span class="items">66</span>
+                    <span class="items">77</span>
+                    <span class="items">88</span>
+                    <span class="items">11</span>
+                    <span class="items">22</span>
+                    <span class="items">33</span>
+                    <span class="items">44</span>
+                    <span class="items">55</span>
+                    <span class="items">66</span>
+                    <span class="items">77</span>
+                    <span class="items">88</span>
+                    <span class="items">11</span>
+                    <span class="items">22</span>
+                    <span class="items">33</span>
+                    <span class="items">44</span>
+                    <span class="items">55</span>
+                    <span class="items">66</span>
+                    <span class="items">77</span>
+                    <span class="items">88</span>
+                </div>
+            </div>
+        </div>
+        <script src="../js/lib/zepto.js"></script>
+        <script src="../js/widget/scroll.js"></script>
+        <script>
+            $(function() {
+                var dialog = new Leyou.widget.scrollObject ({
+                });
+                //dialog.show();
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" id="viewport" content="initial-scale=1,user-scalable=no">
+        <meta name="format-detection" content="telephone=no"/>
+        <title>::title文案::</title>
+        <style>
+            /*-----css Reset end-----*/
+            body,h1,h2,h3,h4,h5,h6,p,ul,ol,form{
+                margin:0;
+            }
+            body,html{
+                background: #ebebeb;
+            }
+            body{
+                font-family: "Microsoft YaHei";
+                font-size: 100%;
+                margin: 0px auto;
+                display: block;
+            }
+            img{
+                border: 0px solid;
+                padding: 0px;
+                margin: 0px;
+            }
+            input,textarea,select{
+                font-size:100%;
+                font-family:arial;
+                font-family:inherit;
+            }
+            h4,h5,h6{
+                font-size:1em;
+            }
+            ul,ol{
+                padding-left:0; 
+                list-style-type:none;
+            }
+            table{
+                border-left: 1px solid #d4ea1d;
+                border-bottom: 1px solid #d4ea1d;
+            }
+            td{
+                border-right:1px solid #d4ea1d;
+                border-top: 1px solid #d4ea1d;
+            }
+            a img{
+                border:0;
+                text-decoration: none;
+            }
+            a{
+                text-decoration: none;
+            }
+            /*清楚浮动*/
+            .clearfloat:after{
+                display:block;
+                clear:both;
+                content:"";
+                visibility:hidden;
+                height:0
+            }
+            #wrapper{
+                width:320px;
+                margin: 0px auto;
+                font-size: 12px;
+            }
+            /*-----css content start-----*/
+            #no-zoom-wrapper{
+                margin: 0px auto;
+                font-size: 12px;
+            }
+            body,html{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+            .hide{
+                display: none;
+            }
+            .loading-page{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                background: #fce700;
+                z-index:999999;
+            }
+            .loading-area{
+                text-align: center;
+                position: absolute;
+                width: 80%;
+                left: 10%;
+                top: 60%;
+            }
+            .loading-process{
+                height: 50px;
+                font-size: 14px;
+                color: #2995b4;
+            }
+            .loading-line{
+                width: 0%;
+                height: 2px;
+                background: #2995b4;
+                -webkit-transition: width 0.1s linear; 
+                transition: width 0.1s linear;
+            }
+
+            .item-page{
+                width: 100%;
+                height: 100%;
+                background: #fce700;
+            }
+            .week{
+                width: 289px;
+                height: 166px;
+                background: url(http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/fweek.png) no-repeat;
+                background-size: 289px 166px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -83px 0 0 -145px;
+                opacity: 0.6;
+            }
+            .inner{
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+            .shu{
+                position: absolute;
+                top: 50%;
+                left: -220px;
+                width: 216px;
+                height: 123px;
+                margin-top: -192px;
+                transition: left 0.5s ease 0s;
+                -webkit-transition: left 0.5s ease 0s;
+            }
+            .shu img{
+                width: 100%;
+                display: block;
+            }
+            .yangmi{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin: -2px 0 0 -35px;
+            }
+            .txt{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                height: 26px;
+                margin: -15px 0 0 -42px;
+                background: #fff;
+            }
+            .txt span{
+                float: left;
+            }
+            em{
+                font-size: 40px;
+                font-weight: bold;
+                line-height: 26px;
+                color: #2995b5;
+                float: left;
+                margin-top: -6px;
+            }
+            .full-div{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                background: #ccc;
+                opacity: 0;
+                transition: opacity 1.5s ease 0s;
+                -webkit-transition: opacity 1.5s ease 0s;
+            }
+
+
+            /*动画*/
+            .animate .shu{
+                left: 0;
+            }
+            .animate .full-div{
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="no-zoom-wrapper">
+            <div class="loading-page">
+                <div class="loading-area">
+                    <div class="loading-process">
+                        <span>Loading</span>
+                        <span class="loading-numb">0%</span>
+                    </div>
+                    <div class="loading-line"></div>
+                </div>
+            </div>
+            <div id="content-page">
+                <div class="screen">
+                    <div class="item-page page-1">
+                        <div class="week"></div>
+                        <div class="inner">
+                            <div class="shu">
+                                <img src="http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/shushuo.png">
+                            </div>
+                            <p class="txt t3 clearfloat"><span>总播放量</span><em>2920</em><span>万</span></p>
+                            <div class="yangmi">
+                                <img width="69" src="http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/s2_yangmi.png">
+                            </div>
+                        </div>
+                        <div class="point-up"></div>
+                    </div>
+                    <div class="item-page page-2">
+                        <div class="week"></div>
+                        <div class="inner">
+                            <div class="shu">
+                                <img src="http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/shushuo.png">
+                            </div>
+                            <p class="txt t3 clearfloat"><span>总播放量</span><em>2920</em><span>万</span></p>
+                            <div class="yangmi">
+                                <img width="69" src="http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/s2_yangmi.png">
+                            </div>
+                        </div>
+                        <div class="point-up"></div>
+                    </div>
+                    <div class="item-page page-3">
+                        <div class="week"></div>
+                        <div class="inner">
+                            <div class="shu">
+                                <img src="http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/shushuo.png">
+                            </div>
+                            <p class="txt t3 clearfloat"><span>总播放量</span><em>2920</em><span>万</span></p>
+                            <div class="yangmi">
+                                <img width="69" src="http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/s2_yangmi.png">
+                            </div>
+                        </div>
+                        <div class="point-up"></div>
+                    </div>
+                    <div class="item-page page-4">
+                        <div class="week"></div>
+                        <div class="inner">
+                            <div class="shu">
+                                <img src="http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/shushuo.png">
+                            </div>
+                            <div class="full-div">
+                                <a>查看详情</a>
+                                <div class="back">返回</div>
+                            </div>
+                        </div>
+                        <div class="point-up"></div>
+                    </div>
+                    <div class="item-page page-5">
+                        <div class="week"></div>
+                        <div class="inner">
+                            page5
+                        </div>
+                        <div class="point-up"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="http://ms0.jmstatic.com/lib/js/framework/zepto.js"></script>
+        <script src="http://ms0.jmstatic.com/lib/js/framework/base.js"></script>
+        <script src="http://ms0.jmstatic.com/lib/js/widget1.0/imglazyload.js"></script>
+        <script>
+
+            //不等dom加载完全直接执行js，预加载图片
+            var loading_pics = [
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/zuihuo.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/daban.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/24hours.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/daban.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/dujia.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/fweek.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/outla.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/txsp.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/shushuo.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/s2_mingxing.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/s2_shuqi.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/s2_zhaowei.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/s2_yangmi.png",
+                "http://mat1.gtimg.com/fashion/oliviatang/zt1/15ssfw/s2_libingbing.png",
+                "http://p2.jmstatic.com/mobile/act/activities/2015_01/huodong_0119/banner_bg.jpg"
+            ];
+            var imgLoad = function(picsArray,callback){
+                var img = new Image();
+                //递归回调，阻塞图片并行加载，变成上一个图片加载完成之后再加载下一个
+                var index = 0,len = picsArray.length;
+                var changeScale = function(scale){
+                    $('.loading-numb').html(scale);
+                    $('.loading-line').css('width',scale);
+                }
+                var load = function(){
+                    img.src = loading_pics[index];
+                    img.onload = function(){
+                        var scale = Math.floor((index + 1) * 100 / len) + '%';
+                        changeScale(scale);
+                        index++;
+                        if(index < len){
+                            load();
+                        }
+                        else{
+                            //加载完成之后的回调
+                            callback();
+                        }
+                    }
+                }
+                if(len > 0)
+                    load();
+                else
+                    //如果没有图片
+                    changeScale('100%');
+            }
+
+            $(function() {
+                var func_1 = function(){
+                    $('.animate').removeClass('animate');
+                    $('.page-1').addClass('animate');
+                }
+                var func_2 = function(){
+                    $('.animate').removeClass('animate');
+                    $('.page-2').addClass('animate');
+                }
+                var func_3 = function(){
+                    $('.animate').removeClass('animate');
+                    $('.page-3').addClass('animate');
+                }
+                var func_4 = function(){
+                    $('.animate').removeClass('animate');
+                    $('.page-4').addClass('animate');
+                    $('.full-div').on('touchstart',function(e){
+                        e.stopPropagation();
+                    })
+                    $('.full-div').on('touchmove',function(e){
+                        e.stopPropagation();
+                    })
+                    $('.full-div').on('touchend',function(e){
+                        e.stopPropagation();
+                    })
+                    $('.full-div').on('touchcancel',function(e){
+                        e.stopPropagation();
+                    })
+                    $('.full-div').show().css('opacity',1);
+                    $('.page-4').removeClass('animate');
+                    $('.back').on('click',function(){
+                        $($(this).parent()).hide().css('opacity',0);
+                        $('.page-4').addClass('animate');
+                    })
+                }
+                var funcArray = [func_1,func_2,func_3,func_4];  
+                var show = function(animateEndCallbackArray){
+                    this.height = window.innerHeight;
+                    this.width = window.innerWidth;
+                    this.pageNum = $('#content-page .item-page').length;
+                    this.curIndex = 0;
+                    this.animateEndFlag = true;
+                    this.animateEndCallbackArray = animateEndCallbackArray;
+                    this.pages = $('.item-page');
+                }
+                show.prototype = {
+                    init:function(){
+                        var self = this;
+                        //this.startLoadImgFunc();
+                        this.initSizeFunc();
+                        this.addEventListenerFunc();
+                        imgLoad(loading_pics,function(){
+                            $('.loading-page').hide();
+                            self.animateEndCallbackArray[0]();
+                        });
+                    },
+                    initSizeFunc:function(){
+                        var self = this;
+                        $('#content-page').css({
+                            'width' : self.width + 'px',
+                            'height' : self.height * this.pageNum + 'px',
+                        });
+                        $('.screen').css({
+                            'width' : self.width + 'px',
+                            'height' : self.height * this.pageNum + 'px',
+                        });
+                        $('.item-page').css({
+                            'width' : self.width + 'px',
+                            'height' : self.height+'px',
+                        });
+
+                    },
+                    startLoadImgFunc:function(){           //等dom加载的时候，图片可以并行加载，这样导致判断img的load事件触发不太准确
+                        var self = this,num = 0 ,n = 0;
+                        var imgs = $('.item-page img');
+                        imgs.on('load',function(){
+                            console.log(++n);
+                            var scale = Math.floor(++num * 100 / imgs.length) + '%';
+                            $('.loading-numb').html(scale);
+                            $('.loading-line').css('width',scale);
+                        })
+                    },
+                    addEventListenerFunc:function(){
+                        var self = this;
+                        self.page = {};
+                        var touchEndFunc = function(e){
+                            self.page.endX = e.changedTouches[0].screenX;
+                            self.page.endY = e.changedTouches[0].screenY;
+                            self.direction = self.page.endY == self.page.startY ? 'none' : ((self.page.endY - self.page.startY < 0) ? 'down' : 'up');
+                            console.log(self.direction);
+                            self.touchEndCallbackFunc(self.direction);
+                        }
+                        $('#content-page').on('touchstart',function(e){
+                            self.page.startX = e.touches[0].screenX;
+                            self.page.startY = e.touches[0].screenY;
+                        });
+                        $('#content-page').on('touchmove',function(e){
+                            self.page.moveX = e.touches[0].screenX;
+                            self.page.moveY = e.touches[0].screenY;
+                        });
+                        $('#content-page').on('touchend',touchEndFunc);
+                        $('#content-page').on('touchcancel',touchEndFunc);
+                        $('#content-page').on('webkitTransitionEnd',function(e){
+                            if(e.target.id == 'content-page'){             //只在content-page动画结束后才触发回调
+                                self.animateEndCallbackFunc(self.curIndex);
+                                self.animateEndFlag = true;               //动画结束后再执行下一次,但是animate方法的结束回调触发不准确
+                            }
+                        });
+                    },
+                    animateEndCallbackFunc:function(index){
+                        var self = this;
+                        if(self.animateEndCallbackArray[index])
+                            self.animateEndCallbackArray[index]();
+                    },
+                    touchEndCallbackFunc:function(direction){
+                        var self = this,direc = self.direction;
+                        var index = null;
+                        if( direc != 'none' && self.animateEndFlag){
+                            self.animateEndFlag = false;
+                            if(direc == 'down'){
+                                index = self.curIndex + 1 >= this.pageNum ? 0: ++self.curIndex;
+                                $('#content-page').animate({
+                                    '-webkit-transform': 'translate3d(0px, -'+(index * self.height)+'px, 0px)',
+                                },500,'ease');
+                                self.curIndex = index;
+                            }
+                            else{
+                                if(self.curIndex - 1 >= 0){
+                                    $('#content-page').animate({
+                                        '-webkit-transform': 'translate3d(0px, -'+(--self.curIndex * self.height)+'px, 0px)',
+                                    },500,'ease');
+                                }
+                                else {
+                                    self.animateEndFlag = true; //到达顶部之后，不会触发webkitTransitionEnd事件
+                                }
+                            }
+                        }
+                    }
+                }
+                var showObj = new show(funcArray);
+                showObj.init();
+            });
+        </script>
+        <script type="text/javascript">
+            $('.envelope-area').on('click', function(){
+                var gaid = $(this).attr('hrefid');
+                Jumei.ja('1212yure','click','hash_'+gaid);
+            })
+        </script>
+    </body>
+</html>
+
+
+
+

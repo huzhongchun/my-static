@@ -1,0 +1,11 @@
+{
+
+    "jshint" : {
+        "widgetSrc" : "js/widget/*.js",
+        "libSrc" : "js/lib/*.js"
+    },
+
+    "csslint" : {
+        "src" : "css/**/*.css"    
+    }
+}

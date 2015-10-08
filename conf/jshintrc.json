@@ -1,0 +1,17 @@
+{
+    "loopfunc": true,
+    "browser" : true,
+    "nonstandard" : true,
+    "devel" : true,
+    "jquery" : true,
+    "noarg" : true,
+    "undef" : true,
+    "proto" : true,
+    "iterator" : true,
+    "sub" : true,
+    "eqnull" : true,
+    "evil" : true,
+    "expr" : true,
+    "asi" : true,
+    "predef" : [ "define", "Leyou","Zepto"]
+}
